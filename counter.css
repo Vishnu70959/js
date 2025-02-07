@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.parent{
+    background-color: black;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .counter{
+    background-color: #fff;
+    padding:60px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.parent .counter .counter-value{
+    font-size: 40px;
+}
+.parent .counter .btns button{
+    padding:10px;
+    color:navy;
+    cursor:pointer;
+    border-radius: 7px;
+    border:1px solid gray;
+}
+.parent .counter .btns #btn-inc{
+    background-color: orangered
+}
+.parent .counter .btns #btn-dec{
+    background-color: rgb(196, 13, 13);
+}
+.parent .counter .btns #btn-res{
+    background-color: purple
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+       }
+
+       #dots{
+        color:blueviolet;
+        background-color:khaki;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="dots" class="tit"> DOM IN JAVA SCRIPT</h1>
+    <P> DOM MEANS DOCUMENT OBJECT MODEL</P>
+
+    <h2 id="dots" class="tit"> 25 DOM METHODS ARE THERE</h2>
+
+
+
+    <script>
+       /*  let titleId= document.getElementById("dots")
+        console.log(titleId)
+
+        let titleClass=document.getElementsByClassName("tit")
+        console.log(titleClass)
+
+        let elementsByTag=document.getElementsByTagName("h2")
+        console.log(elementsByTag)  */
+
+        let elementByQuery=document.querySelector(".tit")
+        console.log(elementByQuery)
+    </script>
+</body>
+</html>
