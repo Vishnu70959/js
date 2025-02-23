@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+       }
+
+       .active{
+        width:200px;
+        height:300px;
+        border-radius: 30%;
+        box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+     
+       }
+      
+    </style>
+</head>
+<body>
+  <div id="root">
+
+  </div>
+
+   
+
+    <script>
+      
+    
+
+
+      let rootElement=document.getElementById("root")
+     let image=document.createElement("img")
+     image.setAttribute("src","https://cdn.pixabay.com/photo/2022/06/14/15/30/egret-7262234_640.jpg")
+     image.setAttribute("width","300px")
+    /* image.style.height="250px"
+     image.style.borderRadius="25%"
+     image.style.boxShadow="box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);" */
+
+     //console.log(image)
+
+
+     let buttonAdd=document.createElement('button')
+     buttonAdd.innerText="apply styles"
+     buttonAdd.style.padding="10px"
+     buttonAdd.style.margin="10px"
+     buttonAdd.style.border="1px solid gray"
+
+     let buttonremove=document.createElement('button')
+     buttonremove.innerText="remove styles"
+     buttonremove.style.padding="10px"
+     buttonremove.style.border="1px solid gray"
+
+     buttonAdd.onclick=function(){
+      image.classList.add('active')
+      }
+
+      
+      buttonremove.onclick=function(){
+      image.classList.remove('active')
+     }
+     rootElement.appendChild(image)
+     rootElement.appendChild(buttonAdd)
+     rootElement.appendChild(buttonremove)
+    </script>
+</body>
+</html>
